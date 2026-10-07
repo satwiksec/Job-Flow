@@ -17,10 +17,3 @@ java -cp out Main
 - `Dashboard.java` — polished Swing desktop interface.
 - `Main.java` — application entry point.
 
-## Viva points
-
-- **Lower priority number wins**: CRITICAL (1), HIGH (2), MEDIUM (3), LOW (4).
-- Equal priorities use **arrival time**, then job ID, for deterministic ordering.
-- The heap puts the highest-priority job at array index `0`.
-- Insertion uses **heapify up**; removal moves the final item to the root and uses **heapify down**.
-- `TAT = Completion Time - Arrival Time`; `WT = TAT - Burst Time`; `RT = Start Time - Arrival Time`.
